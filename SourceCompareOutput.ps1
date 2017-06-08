@@ -1,6 +1,6 @@
 Add-PSSnapin Microsoft.SharePoint.PowerShell
 
-$url = "http://dsportal"
+$url = "http://..."
 $site = get-spsite $url
 
 #Create array variable to store data
