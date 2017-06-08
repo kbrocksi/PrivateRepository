@@ -11,7 +11,7 @@ $columns | out-file -filepath $logfile -append
 $site=Get-SPSite $url
 
 # $Webs = $site.AllWebs | Where-Object { $_.Url -contains "PE/ECTA/ECTA%20Intern/EDM" }
-$Webs = Get-SPWeb -identity "http://dsportal/OurCompany/Departments/PE/ECTA/ECTA Intern/EDM"
+$Webs = Get-SPWeb -identity "http://..."
 # $Webs = $site.AllWebs
 
 foreach($web in $webs)
