@@ -10,7 +10,7 @@ $columns | out-file -filepath $logfile -append
 
 $site=Get-SPSite $url
 
-$Webs = $site.AllWebs | Where-Object { $_.Title -contains "Software@dSPACE" }
+$Webs = $site.AllWebs | Where-Object { $_.Title -contains "<SearchText>" }
 # $Webs = $site.AllWebs
 
 foreach($web in $webs)
