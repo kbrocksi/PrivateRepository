@@ -1,9 +1,9 @@
-$site = Get-SPSite 'http://dsportal'
+$site = Get-SPSite 'http://...'
 $web=$site.Rootweb
-$list=$web.Lists.TryGetList('dSPACE News Important')
-$user = $web.EnsureUser('dspace.de\karstenb')
+$list=$web.Lists.TryGetList('Listname')
+$user = $web.EnsureUser('Account')
 $newAlert = $user.Alerts.Add()
-$newAlert.Title = "dSPACE Important News"
+$newAlert.Title = "Listname"
 $newAlert.AlertType=[Microsoft.SharePoint.SPAlertType]::List
 $newAlert.List = $list
 $newAlert.DeliveryChannels = [Microsoft.SharePoint.SPAlertDeliveryChannels]::Email 
