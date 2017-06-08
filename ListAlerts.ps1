@@ -1,6 +1,6 @@
 Add-PSSnapin microsoft.sharepoint.powershell
 
-$site = Get-SPSite "http://dsportal"
+$site = Get-SPSite "http://..."
 $alertResultsCollection = @()
 
 foreach ($web in $site.AllWebs) {  
