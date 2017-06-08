@@ -19,7 +19,7 @@ function RemoveSPWebRecursively(
 }
 
 $DebugPreference = "SilentlyContinue"
-$web = Get-SPWeb "http://dsportal/OurCompany/Departments/PM/SYD/myPortal"
+$web = Get-SPWeb "http://..."
 $DebugPreference = "Continue"
 
 If ($web -ne $null)
