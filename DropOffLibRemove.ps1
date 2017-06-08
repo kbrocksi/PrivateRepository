@@ -1,4 +1,4 @@
-Get-SPSite -Identity http://dsportal | Get-SPWeb -Limit ALL | ForEach-Object { 
+Get-SPSite -Identity http://... | Get-SPWeb -Limit ALL | ForEach-Object { 
 Disable-SPFeature –Identity DocumentRouting –url $_.Url –Confirm:$true
 
 $dropOffLibrary = $_.Lists["Drop Off Library"]
