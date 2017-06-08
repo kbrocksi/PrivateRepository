@@ -1,5 +1,5 @@
 Add-PSSnapin Microsoft.SharePoint.Powershell
-$Url = "http://dsportal" #Replace URL with your site collection
+$Url = "http://..." #Replace URL with your site collection
 $RootURL = $url.Split("/") # Split function is required for Host based site collection
 $RootURL = $RootURL[0] + "/" + $RootURL[1] + "/" + $RootURL[2]
 
